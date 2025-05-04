@@ -2,8 +2,6 @@
 
 A modern, real-time currency converter with market insights, live charts, and financial news updates. Built with vanilla JavaScript and powered by ExchangeRate-API and GNews API.
 
-![Currency Converter](https://i.imgur.com/your-screenshot.jpg)
-
 ## Features
 
 ### 1. Currency Conversion
@@ -148,4 +146,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Biswajit Rout - routbiswajit.0408@gmail.com
 
-Project Link: [https://github.com/Biswajit0408/ConvCurrency](https://github.com/Biswajit0408/ConvCurrency) 
+Project Link: [https://github.com/Biswajit0408/ConvCurrency](https://github.com/Biswajit0408/ConvCurrency)
+
+---
+
+Made with ❤️ by [Biswajit]
