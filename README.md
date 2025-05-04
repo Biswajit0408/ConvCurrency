@@ -2,8 +2,6 @@
 
 A modern, responsive web application for real-time currency conversion. Built with HTML, CSS, and JavaScript, this application provides a clean and intuitive interface for converting between different world currencies.
 
-![Currency Converter Preview](preview.png)
-
 ## Features
 
 - 💱 Convert between 15 major world currencies
