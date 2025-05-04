@@ -1,108 +1,151 @@
-# Currency Converter
+# Currency Converter & Market Insights
 
-A modern, responsive web application for real-time currency conversion. Built with HTML, CSS, and JavaScript, this application provides a clean and intuitive interface for converting between different world currencies.
+A modern, real-time currency converter with market insights, live charts, and financial news updates. Built with vanilla JavaScript and powered by ExchangeRate-API and GNews API.
 
-![Currency Converter Preview](preview.png)
+![Currency Converter](https://i.imgur.com/your-screenshot.jpg)
 
 ## Features
 
-- 💱 Convert between 15 major world currencies
-- 🔄 Real-time exchange rates using ExchangeRate-API
-- 🎨 Modern, responsive design with glassmorphism effect
-- 📱 Mobile-friendly interface
-- ⚡ Quick currency swap functionality
-- 🎯 Precise conversion with 2 decimal places
-- 🌈 Beautiful gradient background
-- 🔍 Clear error handling and user feedback
+### 1. Currency Conversion
+- Real-time exchange rates for 15+ major currencies
+- Instant conversion with live rates
+- Support for major currencies including USD, EUR, GBP, JPY, INR, and more
+- Currency swap functionality
+- Cached rates for better performance
 
-## Supported Currencies
+### 2. Interactive Charts
+- Live exchange rate charts
+- 7-day historical data visualization
+- Interactive tooltips
+- Real-time rate updates
+- Support for multiple currency pairs
 
-- USD (US Dollar)
-- EUR (Euro)
-- GBP (British Pound)
-- JPY (Japanese Yen)
-- AUD (Australian Dollar)
-- CAD (Canadian Dollar)
-- CHF (Swiss Franc)
-- CNY (Chinese Yuan)
-- INR (Indian Rupee)
-- SGD (Singapore Dollar)
-- NZD (New Zealand Dollar)
-- AED (UAE Dirham)
-- BRL (Brazilian Real)
-- MXN (Mexican Peso)
-- ZAR (South African Rand)
+### 3. Market Insights
+- Live currency news feed
+- Market sentiment analysis
+- News volume tracking
+- Top currency mentions
+- Auto-updating news every 30 minutes
+
+### 4. User Experience
+- Clean, modern interface
+- Dark/Light mode toggle
+- Mobile responsive design
+- Smooth animations
+- Error handling and user feedback
 
 ## Technologies Used
-
 - HTML5
-- CSS3 (with modern features like Flexbox and CSS Grid)
-- JavaScript (ES6+)
-- ExchangeRate-API for real-time exchange rates
-- Google Fonts (Poppins)
+- CSS3
+- JavaScript (Vanilla)
+- Chart.js for data visualization
+- ExchangeRate-API for live rates
+- GNews API for financial news
+- Font Awesome for icons
 
-## Setup Instructions
+## APIs Used
+- ExchangeRate-API v6
+- GNews API
+
+## Setup and Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/currency-converter.git
-   ```
+```bash
+git clone https://github.com/Biswajit0408/ConvCurrency.git
+```
 
 2. Navigate to the project directory:
-   ```bash
-   cd currency-converter
-   ```
+```bash
+cd ConvCurrency
+```
 
-3. Open `public/index.html` in your web browser.
+3. Open `index.html` in your browser or use a local server:
+```bash
+# Using Python
+python -m http.server 8000
 
-4. (Optional) To use your own API key:
-   - Sign up at [ExchangeRate-API](https://www.exchangerate-api.com/)
-   - Replace the API key in the JavaScript code with your own
+# Using Node.js
+npx serve public
+```
 
-## Usage
+## Security Best Practices
 
-1. Enter the amount you want to convert
-2. Select the source currency from the "From" dropdown
-3. Select the target currency from the "To" dropdown
-4. Click the "Convert" button to see the result
-5. Use the swap button (↔️) to quickly switch between currencies
+### API Key Security
+- Never commit API keys directly in your code
+- Store API keys in environment variables or use a backend service
+- For development, use a `.env` file (add it to .gitignore)
+- For production, use environment variables in your hosting platform
+
+### Setting up API Keys
+1. Create a `.env` file in your project root:
+```bash
+GNEWS_API_KEY=your_api_key_here
+EXCHANGE_RATE_API_KEY=your_api_key_here
+```
+
+2. Add `.env` to your `.gitignore` file:
+```bash
+echo ".env" >> .gitignore
+```
+
+3. For production deployment:
+   - Set up environment variables in your hosting platform (Netlify, Vercel, etc.)
+   - Never expose API keys in client-side code
+   - Consider using a backend proxy service for API calls
+
+## Configuration
+
+The application requires the following API keys:
+- GNews API: For fetching currency news
+- ExchangeRate-API: For real-time exchange rates
+
+For security reasons, these keys should be:
+1. Stored in environment variables
+2. Never committed to version control
+3. Managed through your hosting platform's environment settings
 
 ## Features in Detail
 
-### Modern UI
-- Clean, minimalist design
-- Glassmorphism effect for the converter box
-- Smooth animations and transitions
-- Responsive layout that works on all devices
+### Currency Conversion
+- Support for 15+ major currencies
+- Real-time exchange rates
+- 5-minute rate caching for better performance
+- Instant swap between currencies
 
-### User Experience
-- Intuitive currency selection
-- Quick currency swap functionality
-- Clear error messages
-- Loading states for API calls
-- Input validation
+### Chart Features
+- Interactive line chart
+- 7-day historical data
+- Real-time updates
+- Current rate display
+- 24-hour change percentage
 
-### Technical Features
-- Real-time exchange rate updates
-- Precise currency conversion
-- Error handling for API failures
-- Mobile-first responsive design
+### News and Market Insights
+- Latest currency news
+- Market sentiment analysis
+- News volume metrics
+- Top currency tracking
+- Auto-refresh every 30 minutes
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-
-- ExchangeRate-API for providing the currency conversion data
-- Google Fonts for the Poppins font family
-- All contributors who have helped improve this project
+- ExchangeRate-API for providing real-time exchange rates
+- GNews API for financial news data
+- Chart.js for beautiful charts
+- Font Awesome for icons
 
 ## Contact
 
-For any questions or suggestions, please open an issue in the GitHub repository.
+Biswajit Rout - routbiswajit.0408@gmail.com
 
----
-
-Made with Love by [Biswajit] 
+Project Link: [https://github.com/Biswajit0408/ConvCurrency](https://github.com/Biswajit0408/ConvCurrency) 
